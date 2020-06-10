@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:textColor="#000"
+                android:text="头条" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recy_live_top"
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:textColor="#000"
+                android:text="正在直播" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recy_live_now"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:textColor="#000"
+                android:text="预告" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recy_live_future"
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+
+            </androidx.recyclerview.widget.RecyclerView>
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

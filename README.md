@@ -1,0 +1,3 @@
+# NetEasyNews
+
+一个简单的新闻APP，使用的网易Json接口，使用ViewPage2和TabLayout
